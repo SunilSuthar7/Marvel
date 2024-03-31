@@ -20,6 +20,7 @@
 ![Task7](https://github.com/SunilSuthar7/Marvel/assets/148562211/a26e1f2f-5cb5-4791-84f6-1a07fb8c5625)
 ![Task6a](https://github.com/SunilSuthar7/Marvel/assets/148562211/26a1f507-dcaa-4496-9bb4-a2d01abb6a21)
 ![Task6](https://github.com/SunilSuthar7/Marvel/assets/148562211/f27a693f-7a0c-48f0-a06a-eb4e54eff732)
+![Task8a](https://github.com/SunilSuthar7/Marvel/assets/148562211/3afcce56-afac-48ab-be81-bd7d4cf526b9)
 ![Task4a](https://github.com/SunilSuthar7/Marvel/assets/148562211/7bdb6597-accf-40aa-9ba9-2ecc6255944c)
 ![Task4](https://github.com/SunilSuthar7/Marvel/assets/148562211/05578617-95d8-4fea-ae24-e25b0f27286d)
 ![Task2](https://github.com/SunilSuthar7/Marvel/assets/148562211/060f087c-5373-4f31-99e8-9b81ab4a985d)
