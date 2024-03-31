@@ -1,4 +1,4 @@
-let is_rice_available=false;
+let is_rice_available=true;
 
 let recipe=(time,work)=>{
     return new Promise((resolve, reject) => {
