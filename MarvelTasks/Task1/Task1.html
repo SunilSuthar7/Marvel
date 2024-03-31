@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grades</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            width: 50%;
+            padding: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter Student Details</h1>
+    <form id="studentForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="marks">Marks:</label><br>
+        <input type="number" id="marks" name="marks"><br>
+        <input type="submit" value="Submit">
+        <br><br>
+    </form>
+    <table id="students">
+        <tr>
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
+    </table>
+    <br>
+    <button onclick="calculate()">Calculate</button>
+    <h2 id="output"></h2>
+    <script>
+        document.getElementById('studentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let name = document.getElementById('name').value;
+            let marks = document.getElementById('marks').value;
+            let row = '<tr><td>' + name + '</td><td>' + marks + '</td></tr>';
+            document.getElementById('students').innerHTML += row;
+            document.getElementById('name').value = '';
+            document.getElementById('marks').value = '';
+        });
+
+        function calculate() {
+            let rows = document.getElementById('students').rows;
+            let total = 0;
+            let students = [];
+            for(let i=1; i<rows.length; i++){
+                let name = rows[i].cells[0].innerText;
+                let marks = Number(rows[i].cells[1].innerText);
+                total += marks;
+                students.push({name: name, marks: marks});
+            }
+            students.sort((a, b) => b.marks - a.marks);
+            let output = "Class Average: " + (total / (rows.length-1)).toFixed(2) + "<br>";
+            output += "Rankings:<br>";
+            for(let i=0; i<students.length; i++){
+                output += (i+1) + ". " + students[i].name + ": " + students[i].marks + "<br>";
+            }
+            document.getElementById('output').innerHTML = output;
+        }
+    </script>
+</body>
+</html>
